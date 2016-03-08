@@ -19,10 +19,10 @@ class DO_Locator_Widget extends WP_Widget
 
         // widget actual processes
         parent::__construct(
-            'DO_Locator_Widget', // Base ID
-            'DO Locator Form', // Name
+            'elit_find_your_do_widget', // Base ID
+            'Find Your DO widget', // Name
             array(
-                'description' => __( 'Places DO Locator Tool form.' )
+                'description' => __( 'Find Your DO form for inside pages' )
             )
         );
 
@@ -33,12 +33,8 @@ class DO_Locator_Widget extends WP_Widget
 
         $html = '
             <div class="widget do-locator">
-                <h3>Find A DO Today</h3>
-                <form id="findYourDo">
-                    <input id="specialty" name="q" type="text" placeholder="Name or Specialty">
-                    <input id="location" name="location" type="text" placeholder="City, State or Zip">
-                    <button>SEARCH <i class="fa fa-angle-double-right"></i></button>
-                </form>
+              <h3>Find Your DO</h3>
+              <div id="findYourDoApp"></div>
             </div>
         ';
 
