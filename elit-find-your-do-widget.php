@@ -32,8 +32,8 @@ class DO_Locator_Widget extends WP_Widget
     {
 
         $html = '
-            <div class="widget fyd__widget">
-              <div id="findYourDoApp"></div>
+            <div class="widget fyd__widget" id="findYourDoInsideForm">
+              <div class="fyd" id="findYourDoApp"></div>
             </div>
         ';
 
